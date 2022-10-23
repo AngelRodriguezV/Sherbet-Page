@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2? family=Roboto:wght@500&display=swap');
+
+.main .carousel-item{
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.main .carousel-item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.main .carousel-item .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.main .carousel-item h2{
+    font-size: 100px;
+    margin: 0 0 10px;
+    font-family: 'Roboto';
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px w
+}
