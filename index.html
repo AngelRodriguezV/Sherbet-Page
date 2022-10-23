@@ -16,7 +16,7 @@
     <body>
         <!--Menu-->
         <header>
-            <nav class="navbar navbar-expand-lg b-color-11 fixed-top">
+            <nav class="navbar navbar-expand-lg bg-light fixed-top">
                 <div class="container-fluid">
                     <a href="#" class="navbar-brand">SHERBET</a>
                     <!--Boton desplegable-->
@@ -33,7 +33,10 @@
                                 <a href="#quien-somos" class="nav-link">QUIEN SOMOS</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#scrollcontacto" class="nav-link">CONTACTO</a>
+                                <a href="#productos" class="nav-link">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contacto" class="nav-link">CONTACTO</a>
                             </li>
                         </ul>
                     </div>
@@ -42,7 +45,7 @@
         </header>
         <!--Carrusel de Imagenes-->
         <main class="main">
-            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" style="background-image: url('./images/img_b_01.jpg');">
                         <div class="container"></div>
@@ -64,27 +67,156 @@
         </main>
         <!--Contenido-->
         <div class="wrapper">
-            <div class="container-fluid pt-5 b-color-11" id="quien-somos">
+            <!--Contenedor de quien somos-->
+            <div class="container-fluid pt-5 b-color-9 text-white" id="quien-somos">
                 <div class="container">
                     <div class="row justify-content-md-center">
-                        <div class="col-md-8 text-center">
+                        <div class="col-md-8 text-center pt-5">
                             <h5 class="mt-0">Quien Somos</h5>
                             <br>
                             <p>Conoce los dulces y florales sabores ancestrales de Oaxaca. Y la historia que hay detrás de cada uno de nuestros deliciosos helados</p>
                         </div>
                         <div class="col-md-4">
                             <div class="somos">
-                                <img src="./images/img_somos_01.JPG" alt="">
+                                <!--Presentación de imagenes de quien somos-->
+                                <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./images/img_somos_01.JPG" alt="">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./images/img_somos_02.JPG" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <br><br>
                 </div>
             </div>
+            <!--Contenedor de productos-->
+            <div id="carousel2" class="carousel slide carousel-fade">
+                <div class="carousel-inner" id="productos">
+                    <div class="carousel-item active b-color-2 pt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="circle-img">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 text-center pt-5">
+                                    <h3>OFRENDA</h3>
+                                    <P>Exquisita combinación entre la flor de cempasúchil y la fruta de la pasión, este helado rinde culto a nuestras tradiciones y nuestros seres queridos.</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item b-color-3 pt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="circle-img">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 text-center pt-5">
+                                    <h3>REMEDIO</h3>
+                                    <p>De jamaica con poleo, su nombre hace referencia al uso que comúnmente se le da a uno de sus ingredientes principales, el poleo como remedio para la cruda.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item b-color-7 pt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="circle-img">
+                                        <img src="./images/img_bugalbilia.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 text-center pt-5">
+                                    <h3>BUGAMBILIA</h3>
+                                    <p>Flores de bugambilia y frutos rojos. Su color y sabor lo hacen una nueva forma de enamorarse de los sabores y colores de Oaxaca.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item b-color-5 pt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="circle-img">
+                                        <img src="./images/img_cerrito.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 text-center pt-5">
+                                    <h3>CERRITO</h3>
+                                    <p>Este sabor es un homenaje a los pueblos y cerros que envuelven Matatlán. Refrescante combinación entre limón, albahaca, poleo y un toque de mezcal.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item b-color-6 pt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="circle-img">
+                                        <img src="./images/img_lavanda.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 text-center pt-5">
+                                    <h3>LAVANDA</h3>
+                                    <p>Una cremosa experiencia con lavanda, almendras, queso crema y blueberries.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item b-color-4 pt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="circle-img">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 text-center pt-5">
+                                    <h3>ATOLE ELOTE</h3>
+                                    <p>Una experiencia peculiar y única, hecha con atole de elote con epazote y chile.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item b-color-1 pt-5">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="circle-img">
+                                        <img src="" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-8 text-center pt-5">
+                                    <h3>MILAGRITO</h3>
+                                    <p>Su color es como el de los corazones de hojalata que llamamos milagritos. Está hecho de jiotilla y romero.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
         <!--Footer-->
         <footer class="b-color-9 text-white pt-5">
-            <div class="container" id="scrollcontacto">
+            <div class="container" id="contacto">
                 <div class="row">
                     <!--Logo-->
                     <div class="col-md-5">
@@ -154,7 +286,7 @@
                 </div>
             </div>
             <!--Copyring-->
-            <div class="py-3  b-color-13">
+            <div class="py-3 bg-light text-black">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">

@@ -36,7 +36,7 @@
 .somos{
     width: 300px; 
     height: 300px; 
-    background: #000;
+    background: gray;
     display: block;
     margin: auto;
     overflow: hidden;
@@ -46,4 +46,45 @@
 .somos img{
     width: 100%;
     justify-content: center;
+}
+
+
+.circle-img{
+    width: 300px;
+    height: 300px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: gray;
+    display: block;
+    margin: auto;
+    overflow: hidden;
+}
+
+.circle-img img{
+    width: 100%;
+    justify-content: center;
+}
+
+.wrapper .carousel-item{
+    min-height: 65vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.wrapper .carousel-item::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.wrapper .row{
+    align-items: center;
+    align-content: center;
 }
