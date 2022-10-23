@@ -12,11 +12,17 @@
         <link rel="stylesheet" href="./css/colores.css">
         <link rel="stylesheet" href="./css/carousel.css">
         <link rel="stylesheet" href="./css/scroll.css">
+        <style>
+            body {
+                overflow: scroll;
+                position: relative;
+            }
+        </style>
     </head>
-    <body>
+    <body data-bs-target="#navbar" data-bs-spy="scroll">
         <!--Menu-->
         <header>
-            <nav class="navbar navbar-expand-lg b-color-11 fixed-top">
+            <nav class="navbar navbar-expand-lg b-color-11 fixed-top" id="navbar">
                 <div class="container-fluid">
                     <a href="#" class="navbar-brand">SHERBET</a>
                     <!--Boton desplegable-->
@@ -30,7 +36,7 @@
                                 <a href="#carousel" class="nav-link active" aria-current="page">INICIO</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#scrollsomos" class="nav-link">QUIEN SOMOS</a>
+                                <a href="#quien-somos" class="nav-link">QUIEN SOMOS</a>
                             </li>
                             <li class="nav-item">
                                 <a href="#scrollcontacto" class="nav-link">CONTACTO</a>
@@ -63,7 +69,25 @@
             </div>
         </main>
         <!--Contenido-->
-
+        <div class="wrapper">
+            <div class="container-fluid pt-5 b-color-11">
+                <div class="container" id="quien-somos">
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-8 text-center">
+                            <h5 class="mt-0">Quien Somos</h5>
+                            <br>
+                            <p>Conoce los dulces y florales sabores ancestrales de Oaxaca. Y la historia que hay detrás de cada uno de nuestros deliciosos helados</p>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="somos">
+                                <img src="./images/img_somos_01.JPG" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
         <!--Footer-->
         <footer class="b-color-9 text-white pt-5">
             <div class="container" id="scrollcontacto">
