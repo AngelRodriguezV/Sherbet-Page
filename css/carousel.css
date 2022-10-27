@@ -1,4 +1,4 @@
-
+/*Carousel principal*/
 .main .carousel-item{
     min-height: 100vh;
     background-position: center;
@@ -17,60 +17,6 @@
     z-index: -1;
 }
 
-.main .carousel-item .container{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-}
-
-.main .carousel-item h2{
-    font-size: 100px;
-    margin: 0 0 10px;
-    font-family: 'Roboto';
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px w
-}
-
-/**/
-.somos{
-    width: 300px; 
-    height: 300px; 
-    background: gray;
-    display: block;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.somos img{
-    width: 100%;
-    justify-content: center;
-}
-
-.wrapper .carousel-somos .carousel-item{
-    min-height: 65vh;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-}
-
-.wrapper .carousel-somos .carousel-item::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.wrapper .row{
-    align-items: center;
-    align-content: center;
-}
-
 .img_proc{
     width: 300px;
     height: 300px;
@@ -82,7 +28,7 @@
 }
 
 .img_proc img{
-    height: 100%;
+    width: 100%;
     justify-content: center;
 }
 
