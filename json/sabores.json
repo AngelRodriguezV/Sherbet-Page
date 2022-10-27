@@ -1,0 +1,56 @@
+[
+    {
+        "nombre":       "OFRENDA",
+        "descripcion":  "Exquisita combinación entre la flor de cempasúchil y la fruta de la pasión, este helado rinde culto a nuestras tradiciones y nuestros seres queridos.",
+        "imagen":       "img_ofrenda.jpg",
+        "color":        "b-color-2"
+    },
+    {
+        "nombre":       "REMEDIO",
+        "descripcion":  "De jamaica con poleo, su nombre hace referencia al uso que comúnmente se le da a uno de sus ingredientes principales, el poleo como remedio para la cruda.",
+        "imagen":       "img_remedio.jpg",
+        "color":        "b-color-3"
+    },
+    {
+        "nombre":       "BUGAMBILIA",
+        "descripcion":  "Flores de bugambilia y frutos rojos. Su color y sabor lo hacen una nueva forma de enamorarse de los sabores y colores de Oaxaca.",
+        "imagen":       "img_bugambilia.jpg",
+        "color":        "b-color-7"
+    },
+    {
+        "nombre":       "CERRITO",
+        "descripcion":  "Este sabor es un homenaje a los pueblos y cerros que envuelven Matatlán. Refrescante combinación entre limón, albahaca, poleo y un toque de mezcal.",
+        "imagen":       "img_cerrito.jpg",
+        "color":        "b-color-5"
+    },
+    {
+        "nombre":       "LAVANDA",
+        "descripcion":  "Una cremosa experiencia con lavanda, almendras, queso crema y blueberries.",
+        "imagen":       "img_lavanda.jpg",
+        "color":        "b-colro-6"
+    },
+    {
+        "nombre":       "ATOLE DE ELOTE",
+        "descripcion":  "Una experiencia peculiar y única, hecha con atole de elote con epazote y chile.",
+        "imagen":       "img_atole_elote.jpg",
+        "color":        "b-color-4"
+    },
+    {
+        "nombre":       "MILAGRITO",
+        "descripcion":  "Su color es como el de los corazones de hojalata que llamamos milagritos. Está hecho de jiotilla y romero.",
+        "imagen":       "img_milagrito.jpg",
+        "color":        "b-color-1"
+    },
+    {
+        "nombre":       "COSECHA",
+        "descripcion":  "",
+        "imagen":       "img_cosecha.jpg",
+        "color":        "b-color-"
+    },
+    {
+        "nombre":       "DULCE NÉCTAR",
+        "descripcion":  "",
+        "imagen":       "img_dulce_nectar.jpg",
+        "color":        "b-color-"
+    }
+]
