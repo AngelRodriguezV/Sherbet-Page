@@ -1,0 +1,83 @@
+{
+    "carousel": [
+        {"img":""}
+    ],
+    "productos": [
+        {
+            "nombre": "Cono",
+            "img": "img_proc_cono.jpg"
+        },
+        {
+            "nombre": "Jícara",
+            "img": "img_proc_jicara.jpg"
+        },
+        {
+            "nombre": "Paleta",
+            "img": "img_proc_paleta.jpg"
+        },
+        {
+            "nombre": "Bote",
+            "img": "img_proc_bote.jpg"
+        }
+    ],
+    "sabores": {
+        "helados": [
+            {
+                "nombre": "Ofrenda",
+                "descripcion": "",
+                "img": "img_ofrenda.jpg",
+                "color": ""
+            },
+            {
+                "nombre": "Bugambilia",
+                "descripcion": "",
+                "img": "img_bugambilia.jpg",
+                "color": ""
+            },
+            {
+                "nombre": "Elote",
+                "descripcion": "",
+                "img": "img_elote.jpg",
+                "color": ""
+            },
+            {
+                "nombre": "Lavanda",
+                "descripcion": "",
+                "img": "img_lavanda.jpg",
+                "color": ""
+            },
+            {
+                "nombre": "Cosecha",
+                "descripcion": "",
+                "img": "img_cosecha.jpg",
+                "color": ""
+            }
+        ],
+        "nieves": [
+            {
+                "nombre": "Cerrito",
+                "descripcion": "",
+                "img": "",
+                "color": ""
+            },
+            {
+                "nombre": "Milagrito",
+                "descripcion": "",
+                "img": "",
+                "color": ""
+            },
+            {
+                "nombre": "Remedio",
+                "descripcion": "",
+                "img": "",
+                "color": ""
+            },
+            {
+                "nombre": "Dulce néctar",
+                "descripcion": "",
+                "img": "",
+                "color": ""
+            }
+        ]
+    }
+}
