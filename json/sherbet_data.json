@@ -24,25 +24,25 @@
         "helados": [
             {
                 "nombre": "Ofrenda",
-                "descripcion": "",
+                "descripcion": "Exquisita combinación entre la flor de cempasúchil y la fruta de la pasión, este helado rinde culto a nuestras tradiciones y nuestros seres queridos.",
                 "img": "img_ofrenda.jpg",
                 "color": ""
             },
             {
                 "nombre": "Bugambilia",
-                "descripcion": "",
+                "descripcion": "Flores de bugambilia y frutos rojos. Su color y sabor lo hacen una nueva forma de enamorarse de los sabores y colores de Oaxaca.",
                 "img": "img_bugambilia.jpg",
                 "color": ""
             },
             {
                 "nombre": "Elote",
-                "descripcion": "",
+                "descripcion": "Una experiencia peculiar y única, hecha con atole de elote con epazote y chile.",
                 "img": "img_elote.jpg",
                 "color": ""
             },
             {
                 "nombre": "Lavanda",
-                "descripcion": "",
+                "descripcion": "Una cremosa experiencia con lavanda, almendras, queso crema y blueberries.",
                 "img": "img_lavanda.jpg",
                 "color": ""
             },
@@ -56,26 +56,26 @@
         "nieves": [
             {
                 "nombre": "Cerrito",
-                "descripcion": "",
-                "img": "",
+                "descripcion": "Este sabor es un homenaje a los pueblos y cerros que envuelven Matatlán. Refrescante combinación entre limón, albahaca, poleo y un toque de mezcal.",
+                "img": "img_cerrito.jpg",
                 "color": ""
             },
             {
                 "nombre": "Milagrito",
-                "descripcion": "",
-                "img": "",
+                "descripcion": "Su color es como el de los corazones de hojalata que llamamos milagritos. Está hecho de jiotilla y romero.",
+                "img": "img_milagrito.jpg",
                 "color": ""
             },
             {
                 "nombre": "Remedio",
-                "descripcion": "",
-                "img": "",
+                "descripcion": "De jamaica con poleo, su nombre hace referencia al uso que comúnmente se le da a uno de sus ingredientes principales, el poleo como remedio para la cruda.",
+                "img": "img_remedio.jpg",
                 "color": ""
             },
             {
                 "nombre": "Dulce néctar",
                 "descripcion": "",
-                "img": "",
+                "img": "img_dulce-nectar.jpg",
                 "color": ""
             }
         ]
