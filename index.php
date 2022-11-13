@@ -15,6 +15,10 @@
         <link rel="stylesheet" href="./css/font.css">
     </head>
     <body>
+        <?php
+            $file = file_get_contents('./json/sherbet_data.json');
+            $data = json_decode($file);
+        ?>
         <!--Menu-->
         <header>
             <nav class="navbar navbar-expand-lg bg-light fixed-top">
@@ -48,21 +52,16 @@
         <main class="main">
             <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" style="background-image: url('./images/img_b_01.jpg');">
-                        <div class="container"></div>
-                    </div>
-                    <div class="carousel-item" style="background-image: url('./images/img_b_02.jpg');">
-                        <div class="container"></div>
-                    </div>
-                    <div class="carousel-item" style="background-image: url('./images/img_b_03.jpg');">
-                        <div class="container"></div>
-                    </div>
-                    <div class="carousel-item" style="background-image: url('./images/img_b_04.jpg');">
-                        <div class="container"></div>
-                    </div>
-                    <div class="carousel-item" style="background-image: url('./images/img_b_05.jpg');">
-                        <div class="container"></div>
-                    </div>
+                    <?php
+                        # Creamos de manera autamatica las imagenes del carousel
+                        for ($i = 0; $i < count($data->carousel); $i++) {
+                            $cad = "<div class=\"carousel-item ";
+                            if ($i == 0){
+                                $cad = $cad . "active";
+                            }
+                            echo "{$cad}\" style=\"background-image: url('./images/{$data->carousel[$i]->img}');\"></div>";
+                        }
+                    ?>
                 </div>
             </div>
         </main>
@@ -114,193 +113,61 @@
                         </div>
                         <!--Variedad de productos-->
                         <div class="col-md-12 text-center pt-5">
-                            <div class="row">
-                                <div class="col-md-12 text-md-start">
-                                    <h2>Variedad de Productos</h2>
-                                </div>
-                                <hr>
-                                <!-- Presentaciones de nuestros productos-->
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        <div class="col-md-3 pt-4">
-                                            <img src="./images/img_proc_cono.jpg" alt="cono" class="img-responsive rounded" width="300" height="300">
-                                            <h4 class="pt-2">Cono</h4>
-                                        </div>
-                                        <div class="col-md-3 pt-4">
-                                            <img src="./images/img_proc_jicara.jpg" alt="jicara" class="img-responsive rounded" width="300" height="300">
-                                            <h4 class="pt-2">Jícara</h4>
-                                        </div>
-                                        <div class="col-md-3 pt-4">
-                                            <img src="./images/img_proc_paleta.jpg" alt="paleta" class="img-responsive rounded" width="300" height="300">
-                                            <h4 class="pt-2">Paletas</h4>
-                                        </div>
-                                        <div class="col-md-3 pt-4">
-                                            <img src="./images/img_proc_bote.jpg" alt="litro" class="img-responsive rounded" width="300" height="300">
-                                            <h4 class="pt-2">Litro</h4>
-                                        </div>
-                                    </div>
-                                </div>
+                            <h2>Variedad de Productos</h2>
+                            <hr>
+                            <!-- Presentaciones de nuestros productos-->
+                            <div class="row g-2 justify-content-center">
+                                <?php 
+                                    for ($i = 0; $i < count($data->productos); $i++) {
+                                        echo "<div class=\"col-12 col-md-6 col-lg-3\">";
+                                        echo "<div class=\"card\">";
+                                        echo "<div class=\"card-body\">";
+                                        echo "<h5 class=\"card-title\">{$data->productos[$i]->nombre}</h5></div>";
+                                        echo "<img src=\"./images/{$data->productos[$i]->img}\" class=\"card-img-bottom\" alt=\"{$data->productos[$i]->nombre}\"></div></div>";
+                                    }
+                                ?>
                             </div>
                         </div>
                         <!--Sabores-->
-                        <div class="col-md-12 text-center pt-5 sabores">
-                            <div class="row text-center">
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <h1>SABORES</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="col-md-12">
-                                    <div class="row pt-4 align-content-md-center">
-                                        <!--Helados-->
-                                        <div class="col-md-6 pt-4">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <h3>HELADOS</h3>
-                                                </div>
-                                                <div class="col-md-12 text-light">
-                                                    <div id="carouselHelados" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                                        <div class="carousel-inner pt-4">
-                                                            <div class="carousel-item active b-ofrenda-6">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <img src="./images/img_ofrenda.jpg" alt="ofrenda" class="img-responsive rounded-circle" width="300" height="300">
-                                                                    </div>
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <h4>Ofrenda</h4>
-                                                                        <p class="pt-2">Exquisita combinación entre la flor de cempasúchil y la fruta de la pasión, este helado rinde culto a nuestras tradicciones y nuetros seres queridos.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="carousel-item b-bugambilia-6">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <img src="./images/img_bugambilia.jpg" alt="bugambilia" class="img-responsive rounded-circle" width="300" height="300">
-                                                                    </div>
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <h4>Bugambilia</h4>
-                                                                        <p class="pt-2">Flores de búgambilia y frutos rojos. Su color y sabor lo hacen una nueva forma de enamorarse de los sabores y colores de Oaxaca.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="carousel-item b-atole-5">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <img src="./images/img_elote.jpg" alt="elote" class="img-responsive rounded-circle" width="300" height="300">
-                                                                    </div>
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <h4>Elote</h4>
-                                                                        <p class="pt-2">Una experiencia peculiar y única, hecha con atole de elote con epazote y chile.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="carousel-item b-lavanda-6">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <img src="./images/img_lavanda.jpg" alt="lavanda" class="img-responsive rounded-circle" width="300" height="300">
-                                                                    </div>
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <h4>Lavanda</h4>
-                                                                        <p class="pt-2">Una cremosa experiencia con lavanda, almendras, queso crema y blueberries.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <!--div class="carousel-item b-ofrenda-6">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <img src="./images/img_ofrenda.jpg" alt="ofrenda" class="img-responsive rounded-circle" width="300" height="300">
-                                                                    </div>
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <h4>Cosecha</h4>
-                                                                        <p class="pt-2"></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div-->
-                                                        </div>
-                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHelados" data-bs-slide="prev">
-                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                            <span class="visually-hidden">Previous</span>
-                                                        </button>
-                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselHelados" data-bs-slide="next">
-                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                            <span class="visually-hidden">Next</span>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Nieves-->
-                                        <div class="col-md-6 pt-4">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <h3>NIEVES</h3>
-                                                </div>
-                                                <!--Sabores de Nieves-->
-                                                <div class="col-md-12 text-light">
-                                                    <div id="carouselNieves" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                                        <div class="carousel-inner pt-4">
-                                                            <!--div class="carousel-item active ">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <img src="./images/img_ofrenda.jpg" alt="ofrenda" class="img-responsive rounded-circle" width="300" height="300">
-                                                                    </div>
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <h4>Dulce néctar</h4>
-                                                                        <p class="pt-2"></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div-->
-                                                            <div class="carousel-item b-remedio-6 active">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <img src="./images/img_remedio.jpg" alt="remedio" class="img-responsive rounded-circle" width="300" height="300">
-                                                                    </div>
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <h4>Remedio</h4>
-                                                                        <p class="pt-2">De jamaica con poleo, su nombre hace referencia al uso que comúnmente se le da a uno de sus ingredientes principales, el poleo como remedio para la cruda.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="carousel-item b-cerrito-6">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <img src="./images/img_cerrito.jpg" alt="cerrito" class="img-responsive rounded-circle" width="300" height="300">
-                                                                    </div>
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <h4>Cerrito</h4>
-                                                                        <p class="pt-2">Este sabor es un homenaje a los pueblos y cerros que envuelven Matatlán. Refrescante combinación entre límon, albahaca, poleo y un toque de mezcal.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="carousel-item b-remedio-5">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <img src="./images/img_remedio.jpg" alt="milagrito" class="img-responsive rounded-circle" width="300" height="300">
-                                                                    </div>
-                                                                    <div class="col-md-12 pt-4">
-                                                                        <h4>Milagrito</h4>
-                                                                        <p class="pt-2">Su color es como el de los corazones de hojalata que llamamos milagrito. Está hecho de jiotilla y romero.</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNieves" data-bs-slide="prev">
-                                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                            <span class="visually-hidden">Previous</span>
-                                                        </button>
-                                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselNieves" data-bs-slide="next">
-                                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                            <span class="visually-hidden">Next</span>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <!--div class="col-md-12 text-center pt-5">
+                            <h1>SABORES</h1>
+                        </div-->
+                        <!--Helados-->
+                        <div class="col-md-12 text-center pt-5">
+                            <h2>SABORES DE HELADOS</h2>
+                            <hr>
+                            <div class="row g-2 justify-content-center text-light">
+                                <?php 
+                                    $helados = $data->sabores->helados;
+                                    for ($i = 0; $i < count($helados); $i++) {
+                                        echo "<div class=\"col-12 col-md-6 col-lg-3\">";
+                                        echo "<div class=\"card border border-0 {$helados[$i]->color}\" style=\"height: 30rem;\">";
+                                        echo "<img src=\"./images/{$helados[$i]->img}\" alt=\"{$helados[$i]->nombre}\" class=\"img-responsive rounded-circle mx-auto pt-2\" width=\"300\" height=\"300\">";
+                                        echo "<div class=\"card-body\">";
+                                        echo "<h5 class=\"card-title\">{$helados[$i]->nombre}</h5>";
+                                        echo "<p class=\"card-text\">{$helados[$i]->descripcion}</p>";
+                                        echo "</div></div></div>";
+                                    }
+                                ?>
+                            </div>
+                        </div>
+                        <!--Nieves-->
+                        <div class="col-md-12 text-center pt-5">
+                            <h2>SABORES DE NIEVES</h2>
+                            <hr>
+                            <div class="row g-2 justify-content-center text-light">
+                                <?php 
+                                    $nieves = $data->sabores->nieves;
+                                    for ($i = 0; $i < count($nieves); $i++) {
+                                        echo "<div class=\"col-12 col-md-6 col-lg-3\">";
+                                        echo "<div class=\"card border border-0 {$nieves[$i]->color}\" style=\"height: 30rem;\">";
+                                        echo "<img src=\"./images/{$nieves[$i]->img}\" alt=\"{$nieves[$i]->nombre}\" class=\"img-responsive rounded-circle mx-auto pt-2\" width=\"300\" height=\"300\">";
+                                        echo "<div class=\"card-body\">";
+                                        echo "<h5 class=\"card-title\">{$nieves[$i]->nombre}</h5>";
+                                        echo "<p class=\"card-text\">{$nieves[$i]->descripcion}</p>";
+                                        echo "</div></div></div>";
+                                    }
+                                ?>
                             </div>
                         </div>
                     </div>

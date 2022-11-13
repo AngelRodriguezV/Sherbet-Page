@@ -1,6 +1,10 @@
 {
     "carousel": [
-        {"img":""}
+        {"img": "img_b_01.jpg"},
+        {"img": "img_b_02.jpg"},
+        {"img": "img_b_03.jpg"},
+        {"img": "img_b_04.jpg"},
+        {"img": "img_b_05.jpg"}
     ],
     "productos": [
         {
@@ -26,31 +30,31 @@
                 "nombre": "Ofrenda",
                 "descripcion": "Exquisita combinación entre la flor de cempasúchil y la fruta de la pasión, este helado rinde culto a nuestras tradiciones y nuestros seres queridos.",
                 "img": "img_ofrenda.jpg",
-                "color": ""
+                "color": "b-ofrenda-6"
             },
             {
                 "nombre": "Bugambilia",
                 "descripcion": "Flores de bugambilia y frutos rojos. Su color y sabor lo hacen una nueva forma de enamorarse de los sabores y colores de Oaxaca.",
                 "img": "img_bugambilia.jpg",
-                "color": ""
+                "color": "b-bugambilia-6"
             },
             {
                 "nombre": "Elote",
                 "descripcion": "Una experiencia peculiar y única, hecha con atole de elote con epazote y chile.",
                 "img": "img_elote.jpg",
-                "color": ""
+                "color": "b-atole-5"
             },
             {
                 "nombre": "Lavanda",
                 "descripcion": "Una cremosa experiencia con lavanda, almendras, queso crema y blueberries.",
                 "img": "img_lavanda.jpg",
-                "color": ""
+                "color": "b-lavanda-6"
             },
             {
                 "nombre": "Cosecha",
                 "descripcion": "",
                 "img": "img_cosecha.jpg",
-                "color": ""
+                "color": "b-ofrenda-6"
             }
         ],
         "nieves": [
@@ -58,25 +62,25 @@
                 "nombre": "Cerrito",
                 "descripcion": "Este sabor es un homenaje a los pueblos y cerros que envuelven Matatlán. Refrescante combinación entre limón, albahaca, poleo y un toque de mezcal.",
                 "img": "img_cerrito.jpg",
-                "color": ""
+                "color": "b-cerrito-6"
             },
             {
                 "nombre": "Milagrito",
                 "descripcion": "Su color es como el de los corazones de hojalata que llamamos milagritos. Está hecho de jiotilla y romero.",
                 "img": "img_milagrito.jpg",
-                "color": ""
+                "color": "b-remedio-5"
             },
             {
                 "nombre": "Remedio",
                 "descripcion": "De jamaica con poleo, su nombre hace referencia al uso que comúnmente se le da a uno de sus ingredientes principales, el poleo como remedio para la cruda.",
                 "img": "img_remedio.jpg",
-                "color": ""
+                "color": "b-remedio-6"
             },
             {
                 "nombre": "Dulce néctar",
                 "descripcion": "",
                 "img": "img_dulce-nectar.jpg",
-                "color": ""
+                "color": "b-remedio-5"
             }
         ]
     }
