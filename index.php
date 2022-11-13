@@ -68,18 +68,35 @@
         <!--Contenido-->
         <div class="wrapper">
             <!--Contenedor de quien somos-->
-            <div class="container-fluid pt-5 b-color-9 text-white carousel-somos" id="quien-somos">
+            <div class="container-fluid pt-5 b-color-9 carousel-somos" id="quien-somos">
                 <div class="container">
                     <div class="row justify-content-md-center">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-md-8 text-center pt-5">
-                                    <h1>Quiénes Somos</h1>
-                                    <br>
-                                    <p>Sherbet es una marca de reposteria fría con flora oaxaqueña, específicamente de helados, nieves y paletas de sabores finos y peculiares.</p>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/img_somos.jpg" class="img-fluid rounded-start" alt="quien somos">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Quiénes Somos</h5>
+                                            <p class="card-text">Sherbet es una marca de reposteria fría con flora oaxaqueña, específicamente de helados, nieves y paletas de sabores finos y peculiares.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 text-md-center">
-                                    <img src="./images/img_quiensomos.jpg" alt="quien somos" class="img-responsive rounded" width="300" height="300">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./images/img_somos_02.jpg" class="img-fluid rounded-start" alt="quien somos">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <p class="card-text">Al usar flora de huertos locales fortalecemos y movilizamos cadenas productivas de insumos que antes no representaban un ingreso significativo para las familias involucradas.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
